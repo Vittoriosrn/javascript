@@ -8,10 +8,9 @@ body{
     display: flex;
     justify-content: center;
 }
-section#img{
+img{
     width: 450px;
     height: 450px;
-    background-color: rgb(0, 0, 0);
     border-radius: 100%;
     transform: translate(230px, 40px);
 }
