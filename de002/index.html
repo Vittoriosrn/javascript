@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Verificador de Idade</title>
 </head>
 <body>
-    
+    <main>
+        <header>
+            <h1>Verificador de Idade</h1>
+        </header>
+        <section>
+            <form action="verificador()">
+                <p>
+                    <label for="ano_nascimento">Ano de Nascimento</label>
+                    <input type="number" id="ano_nascimento">
+                </p>  
+                <p>
+                    Sexo:
+                    <input type="radio" name="radio_sex" id="masculino_radio" checked>
+                    <label for="masculino_radio">Masculino</label>
+                    <input type="radio" name="radio_sex" id="feminino_radio">
+                    <label for="feminino_radio">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Enviar" onclick="verificador()">
+                </p>
+            </form>
+            <p id="txt_edit">Informe os dados para a verificação</p>
+            <img id="img_sex" src="" alt="">
+        </section>
+        <footer>
+            <p>Developed by @vittoriokevin</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
