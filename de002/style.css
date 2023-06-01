@@ -2,9 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
 body{
     background-color: gray;
 
@@ -39,6 +37,8 @@ footer > p{
 
     text-align: center;
     margin-top: 20px;
+    font-style: italic;
+    font-size: 1em;
 }
 img{
     transform: translate(210px);
