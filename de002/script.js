@@ -38,6 +38,7 @@ function verificador(){
     }
     else{
         document.querySelector("p#txt_edit").innerHTML = `Informe seu ano de nascimento corretamente`
+        img.setAttribute('src', '')
     }
     resultado_area.appendChild(img) // fazer a imagem aparecer
 }
