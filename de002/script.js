@@ -1,8 +1,10 @@
+var img = document.createElement('img')
+img.setAttribute('id', 'foto')
+
 function verificador(){
     var ano_atual = new Date()
     var ano_user = window.document.querySelector("input#ano_nascimento")
     var idade = (ano_atual.getFullYear() - Number(ano_user.value))
-    var img = document.createElement('img')
     var check_sexo = document.getElementsByName("radio_sex")
     var resultado_area = document.querySelector("div#resultado_area")
 
@@ -30,12 +32,12 @@ function verificador(){
         }else if(idade < 3){                        //Checando se é bebê
             img.setAttribute('src', 'img/homem_bebe.png')
         }else{                                      // Se não, é idoso
-            img.setAttribute('src', 'img/homem_bebe.png')
+            img.setAttribute('src', 'img/homem_idoso.png')
         }
         document.querySelector("p#txt_edit").innerHTML = `Você é um homem com ${idade} anos`
     }
     else{
         document.querySelector("p#txt_edit").innerHTML = `Informe seu ano de nascimento corretamente`
     }
-    resultado_area.appendChild('img')
+    resultado_area.appendChild(img)
 }
