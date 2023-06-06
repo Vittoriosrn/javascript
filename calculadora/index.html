@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Calculator</h1>
+        </header>
+
+        <form action="">
+            <p>INFORME OS VALORES E A OPERAÇÃO:</p>
+            <input id="numero1" type="number">         <!-- Entrada do número 1 -->
+            <select name="operadores" id="operadores">
+                <option selected value="operador">Operador</option>
+                <option value="soma">+</option>
+                <option value="subtracao">-</option>
+                <option value="multiplicacao">*</option>        <!-- Seleçao do operador usando combobo/select em HTML -->
+                <option value="divisao">/</option>
+                <option value="potenciacao">^</option>
+            </select>
+            <input id="numero2" type="number">      <!-- Entrada do número 2 -->
+            <p id="button">
+                <br>
+                <input type="button" value="CALCULAR" onclick="main()">     <!-- Chamada da função -->
+            </p>        
+            <p>Resultado:</p>
+            <p id="resultado"></p>           <!-- Saída do resultado da operação -->
+        </form>
+
+        <footer>
+            <p>Developement by Vittorio Kevin</p>
+        </footer>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
