@@ -15,6 +15,7 @@ function adicionar(){
         input.setAttribute('type','checkbox')
         li.setAttribute('id', `t${indice}`)
         input.setAttribute('name', `t${indice}`)
+        remove.setAttribute('onclick', `remover(indice)`)
         input.setAttribute('id', `t${indice}`)
         label.setAttribute('for', `t${indice}`)
         label.innerHTML = `${nova_tarefa}`
@@ -26,9 +27,7 @@ function adicionar(){
         li.appendChild(input)
         li.appendChild(label)
         li.appendChild(remove)
-        if(indice == 0){
-            list_area.removeChild(vazio)
-        }
+        if(indice == 0) {list_area.removeChild(vazio)}
         indice++
     }else{
         alert("Informe o nome da tarefa")
@@ -36,8 +35,7 @@ function adicionar(){
 }
 
 function remover(id){
-    alert(`t${id}`)
-    const li = document.querySelector(`li#t${id}`)
+    alert(`t${id-1}`)
+    const li = document.querySelector(`li#t${id-1}`)
     list_area.removeChild(li)
 }
-list_area.li.remove.addEventListener('click', remover(this.id))
